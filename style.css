@@ -1,0 +1,130 @@
+@font-face {
+    src: url(font/autumn-flower.otf);
+    font-family: autumn-flower;
+}
+
+body {
+    font-family: autumn-flower;
+    font-size: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 25px;
+    letter-spacing: 0.08em;
+    word-spacing: 1em;
+}
+
+nav {
+    margin-left: 370px;
+    margin-top: -110px;
+    width: 1000px;
+}
+
+nav li {
+    display: inline;
+}
+
+button {
+    font-size: 28px;
+    margin-left: 70px;
+    background-color: navy;
+    color: white;
+    width: 170px;
+    height: 55px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+button:hover {
+    background-color: white;
+    font-weight: bold;
+    color: navy;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+p {
+    margin-top: 25px;
+}
+
+#introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#courses-names {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#courses-names section {
+    margin-top: -120px;
+}
+
+#courses-names aside {
+    margin-top: -80px;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width:992px) {
+    nav li {
+        display: block;
+        margin-left: 400px;
+        line-height: 60px;
+    }
+
+    nav ul {
+        margin-top: 100px;
+    }
+
+    #signup-btn {
+        margin-top: -400px;
+        margin-left: 250px;
+
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #introduction {
+        margin-top: -200px;
+        flex-direction: column-reverse;
+    }
+
+    #introduction aside {
+        margin-top: -80px;
+        margin-left: 50px;
+    }
+
+    #introduction section {
+        text-align: center;
+    }
+
+    #courses-names {
+        flex-direction: column;
+    }
+
+    #courses-names img {
+        width: 900px;
+    }
+
+    #courses-names aside {
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+
+    #courses-names li {
+        margin-left: 300px;
+    }
+}
